@@ -1,6 +1,10 @@
+import ContentContainer from "./ContentContainer/ContentContainer";
+
 function App() {
   return (
-    <div>Hello world!</div>
+    <ContentContainer>
+      <div>Hello world!</div>
+    </ContentContainer>
   )
 }
 
