@@ -1,22 +1,24 @@
 import { useSpace } from '../hooks/SpaceHooks';
-import CrewMember from './CrewMember';
+import LoadingPlaceholder from '../LoadingPlaceholder/LoadingPlaceholder';
+import CrewMembers from './CrewMembers';
 import './css/CrewPage.css';
 
 const CrewPage = () => {
-    const { crewData } = useSpace();
+    const { crewDataStatus, crewData } = useSpace();
 
     return (
         <div className="crew-page">
-            <p className='crew-count'>Currently 6 people on ISS</p>
- 
-            <div className='crew-members'>
-                {crewData && crewData.map(crewMember => (
-                    <CrewMember
-                        key={ crewMember.name }
-                        name={ crewMember.name }
-                    />
-                ))}
-            </div>
+            {crewDataStatus === 'loading' &&
+                <LoadingPlaceholder/>
+            }
+
+            {crewDataStatus === 'success' &&
+                <>
+                    <p className='crew-count'>Currently there are 6 people on ISS</p>
+                    <CrewMembers crewData={ crewData }/>
+                </>
+            }
+            
         </div>
     )
 }
