@@ -1,6 +1,7 @@
 import ContentContainer from "./ContentContainer/ContentContainer";
 import DataContainer from "./DataContainer/DataContainer";
 import HeaderContainer from "./HeaderContainer/HeaderContainer";
+import LocationPage from "./LocationPage/LocationPage";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         />
       </HeaderContainer>
 
+      <LocationPage/>
     </ContentContainer>
   )
 }
