@@ -1,0 +1,10 @@
+.page-container {
+  position: relative;
+  width: 100%;
+  border-style: dashed;
+}
+.page-container .page-centered-content {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}/*# sourceMappingURL=PageContainer.css.map */

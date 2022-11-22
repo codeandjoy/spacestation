@@ -2,6 +2,7 @@ import ContentContainer from "./ContentContainer/ContentContainer";
 import DataContainer from "./DataContainer/DataContainer";
 import HeaderContainer from "./HeaderContainer/HeaderContainer";
 import LocationPage from "./LocationPage/LocationPage";
+import PageContainer from "./PageContainer/PageContainer";
 
 function App() {
   return (
@@ -17,7 +18,9 @@ function App() {
         />
       </HeaderContainer>
 
-      <LocationPage/>
+      <PageContainer>
+        <LocationPage/>
+      </PageContainer>
     </ContentContainer>
   )
 }

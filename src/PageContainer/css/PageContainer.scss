@@ -1,0 +1,13 @@
+.page-container{
+    position: relative;
+
+    width: 100%;
+
+    border-style: dashed;
+
+    .page-centered-content{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
