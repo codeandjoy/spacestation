@@ -1,4 +1,5 @@
 import ContentContainer from "./ContentContainer/ContentContainer";
+import CrewPage from "./CrewPage/CrewPage";
 import DataContainer from "./DataContainer/DataContainer";
 import HeaderContainer from "./HeaderContainer/HeaderContainer";
 import LocationPage from "./LocationPage/LocationPage";
@@ -19,7 +20,7 @@ function App() {
       </HeaderContainer>
 
       <PageContainer>
-        <LocationPage/>
+        <CrewPage/>
       </PageContainer>
     </ContentContainer>
   )

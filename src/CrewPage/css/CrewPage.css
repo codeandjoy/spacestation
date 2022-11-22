@@ -1,0 +1,11 @@
+.crew-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.crew-page .crew-count {
+  margin-bottom: 35px;
+  font-size: 18pt;
+  font-weight: bold;
+  color: #313131;
+}/*# sourceMappingURL=CrewPage.css.map */

@@ -1,0 +1,21 @@
+.crew-member{
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 15px;
+
+    .crew-member--profile-picture{
+        width: 50px;
+        height: 50px;
+
+        margin-right: 20px;
+
+        background-image: url('./profile_picture.png');
+        background-size: cover;
+    }
+
+    .crew-member--name{
+        font-size: 14pt;
+        font-weight: bold;
+    }
+}
