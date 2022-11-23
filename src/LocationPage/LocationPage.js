@@ -14,7 +14,7 @@ const LocationPage = () => {
                 <LoadingPlaceholder/>
             }
 
-            {locationDataStatus === 'success' && locationData !== undefined &&
+            {locationDataStatus === 'success' &&
                 <GoogleMapReact
                     bootstrapURLKeys={{ key: '' }}
                     center={ locationData }
