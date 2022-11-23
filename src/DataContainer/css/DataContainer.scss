@@ -1,18 +1,13 @@
 .data-container{
-
     display: flex;
     flex-basis: fit-content;
     flex-direction: column;
     align-items: center;
 
-    .data-container--title,
-    .data-container--data{
-        font-weight: bold;
-    }
-
     .data-container--title{
         margin-top: -32px;
         margin-bottom: -24px;
+        
         font-size: 100pt;
     }
     .data-container--data{

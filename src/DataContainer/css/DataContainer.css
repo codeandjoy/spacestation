@@ -4,10 +4,6 @@
   flex-direction: column;
   align-items: center;
 }
-.data-container .data-container--title,
-.data-container .data-container--data {
-  font-weight: bold;
-}
 .data-container .data-container--title {
   margin-top: -32px;
   margin-bottom: -24px;
