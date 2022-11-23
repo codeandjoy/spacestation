@@ -6,7 +6,10 @@ export const useSpace = () => {
     const { status: crewDataStatus, data: crewData } = useQuery('crew', () => axios.get('http://api.open-notify.org/astros.json'), { refetchInterval: 5000 });
 
     // Prepare data
-    const cleanLocationData = locationData?.data.iss_position;
+    const cleanLocationData = {
+        lat: locationData === undefined ? 0 : parseFloat(locationData?.data.iss_position.latitude),
+        lng: locationData === undefined ? 0 : parseFloat(locationData?.data.iss_position.longitude),
+    }
     const cleanCrewData = crewData?.data.people
         .filter((spaceman) => spaceman.craft === 'ISS')
         .map((spaceman) => ({ name: spaceman.name }));
