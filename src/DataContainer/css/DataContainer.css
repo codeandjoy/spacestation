@@ -3,7 +3,6 @@
   flex-basis: fit-content;
   flex-direction: column;
   align-items: center;
-  border-style: dashed;
 }
 .data-container .data-container--title,
 .data-container .data-container--data {

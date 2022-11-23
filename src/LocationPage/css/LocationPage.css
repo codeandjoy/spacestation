@@ -1,5 +1,10 @@
 .location-page {
   width: 1000px;
   height: 560px;
-  border-style: dashed;
+}
+.location-page .loading-placeholder {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }/*# sourceMappingURL=LocationPage.css.map */
