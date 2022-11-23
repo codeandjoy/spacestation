@@ -8,10 +8,13 @@ import HeaderContainer from "./HeaderContainer/HeaderContainer";
 import LocationPage from "./LocationPage/LocationPage";
 import Nav from "./Nav/Nav";
 import PageContainer from "./PageContainer/PageContainer";
+import { useTime } from './hooks/TimeHooks';
 
 const queryClient = new QueryClient();
 
 function App() {
+  const { time, date } = useTime();
+
   const location = useLocation();
 
   return (
@@ -28,7 +31,7 @@ function App() {
 
           <DataContainer
             dataTitle='UTC'
-            data={['18:40', 'Tuesday, 17 Apr 2018']}
+            data={[time, date]}
           />
         </HeaderContainer>
 
