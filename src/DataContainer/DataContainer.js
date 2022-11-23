@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import './css/DataContainer.css';
 
 
+
 const DataContainer = ({ dataTitle, data }) => {
     return (
         <div className='data-container'>
@@ -12,6 +13,7 @@ const DataContainer = ({ dataTitle, data }) => {
         </div>
     )
 }
+
 
 
 DataContainer.propTypes = {

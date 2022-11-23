@@ -1,5 +1,4 @@
 import { Navigate, Route, Routes, useLocation } from "react-router-dom";
-import { QueryClientProvider, QueryClient } from 'react-query';
 
 import ContentContainer from "./ContentContainer/ContentContainer";
 import CrewPage from "./CrewPage/CrewPage";
@@ -13,7 +12,7 @@ import { useSpace } from "./hooks/SpaceHooks";
 
 function App() {
   const { time, date } = useTime();
-  const { locationDataStatus, locationData } = useSpace();
+  const { locationData } = useSpace();
 
   const location = useLocation();
 

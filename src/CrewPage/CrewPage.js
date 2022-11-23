@@ -18,7 +18,6 @@ const CrewPage = () => {
                     <CrewMembers crewData={ crewData }/>
                 </>
             }
-            
         </div>
     )
 }

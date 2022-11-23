@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import './css/CrewMember.css';
 
 
+
 const CrewMember = ({ name }) => {
     return (
         <div className='crew-member'>
