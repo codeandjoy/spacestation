@@ -9,52 +9,48 @@ import LocationPage from "./LocationPage/LocationPage";
 import Nav from "./Nav/Nav";
 import PageContainer from "./PageContainer/PageContainer";
 import { useTime } from './hooks/TimeHooks';
-
-const queryClient = new QueryClient();
+import { useSpace } from "./hooks/SpaceHooks";
 
 function App() {
   const { time, date } = useTime();
+  const { locationDataStatus, locationData } = useSpace();
 
   const location = useLocation();
 
   return (
-    <QueryClientProvider client={ queryClient }>
+    <ContentContainer>
+      <HeaderContainer>
+        <DataContainer
+          dataTitle='ISS'
+          data={[`longtitude: ${locationData.lng}`, `latitude: ${locationData.lat}`]}
+        />
 
-      <ContentContainer>
-        <HeaderContainer>
-          <DataContainer
-            dataTitle='ISS'
-            data={['longtitude: 50.1742', 'latitude: -41.2034']}
-          />
+        <Nav/>
 
-          <Nav/>
+        <DataContainer
+          dataTitle='UTC'
+          data={[time, date]}
+        />
+      </HeaderContainer>
 
-          <DataContainer
-            dataTitle='UTC'
-            data={[time, date]}
-          />
-        </HeaderContainer>
-
-        <Routes location={ location } key={ location.pathname }>
-          <Route path='/' element={ <Navigate to='/location'/> }/>
-          <Route path='/location' element=
-            {
-              <PageContainer>
-                <LocationPage/>
-              </PageContainer>
-            }
-          />
-          <Route path='/crew' element=
-            {
-              <PageContainer>
-                <CrewPage/>
-              </PageContainer>
-            }
-          />
-        </Routes>
-      </ContentContainer>
-      
-    </QueryClientProvider>
+      <Routes location={ location } key={ location.pathname }>
+        <Route path='/' element={ <Navigate to='/location'/> }/>
+        <Route path='/location' element=
+          {
+            <PageContainer>
+              <LocationPage/>
+            </PageContainer>
+          }
+        />
+        <Route path='/crew' element=
+          {
+            <PageContainer>
+              <CrewPage/>
+            </PageContainer>
+          }
+        />
+      </Routes>
+    </ContentContainer>
   )
 }
 
