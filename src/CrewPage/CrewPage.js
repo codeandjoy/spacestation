@@ -14,7 +14,7 @@ const CrewPage = () => {
 
             {crewDataStatus === 'success' &&
                 <>
-                    <p className='crew-count'>Currently there are 6 people on ISS</p>
+                    <p className='crew-count'>Currently there are { crewData.length } people on ISS</p>
                     <CrewMembers crewData={ crewData }/>
                 </>
             }
