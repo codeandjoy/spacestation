@@ -1,4 +1,5 @@
 import { Navigate, Route, Routes, useLocation } from "react-router-dom";
+import { AnimatePresence } from "framer-motion"; 
 
 import ContentContainer from "./ContentContainer/ContentContainer";
 import CrewPage from "./CrewPage/CrewPage";
@@ -32,23 +33,25 @@ function App() {
         />
       </HeaderContainer>
 
-      <Routes location={ location } key={ location.pathname }>
-        <Route path='/' element={ <Navigate to='/location'/> }/>
-        <Route path='/location' element=
-          {
-            <PageContainer>
-              <LocationPage/>
-            </PageContainer>
-          }
-        />
-        <Route path='/crew' element=
-          {
-            <PageContainer>
-              <CrewPage/>
-            </PageContainer>
-          }
-        />
-      </Routes>
+      <AnimatePresence mode="wait">
+        <Routes location={ location } key={ location.pathname }>
+          <Route path='/' element={ <Navigate to='/location'/> }/>
+          <Route path='/location' element=
+            {
+              <PageContainer>
+                <LocationPage/>
+              </PageContainer>
+            }
+          />
+          <Route path='/crew' element=
+            {
+              <PageContainer>
+                <CrewPage/>
+              </PageContainer>
+            }
+          />
+        </Routes>
+      </AnimatePresence>
     </ContentContainer>
   )
 }

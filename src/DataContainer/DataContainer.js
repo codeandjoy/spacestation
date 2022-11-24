@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import { motion } from 'framer-motion';
 
 import './css/DataContainer.css';
 
@@ -6,11 +7,17 @@ import './css/DataContainer.css';
 
 const DataContainer = ({ dataTitle, data }) => {
     return (
-        <div className='data-container'>
+        <motion.div 
+            initial={{ opacity: 0, scale: .8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: .2 }}
+            
+            className='data-container'
+        >
             <h1 className='data-container--title'>{ dataTitle }</h1>
             <p className='data-container--data'>{ data[0] }</p>
             <p className='data-container--data'>{ data[1] }</p>
-        </div>
+        </motion.div>
     )
 }
 
