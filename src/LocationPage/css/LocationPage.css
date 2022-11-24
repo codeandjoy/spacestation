@@ -1,13 +1,8 @@
 .location-page {
   width: 50vw;
   height: 55vh;
-}
-.location-page .loading-placeholder,
-.location-page .error-message {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
 }
 
 @media (max-width: 1200px) {
