@@ -6,5 +6,12 @@
 .crew-page .crew-count {
   margin-bottom: 35px;
   font-size: 18pt;
+  text-align: center;
   color: #313131;
+}
+
+@media (max-width: 1200px) {
+  .crew-page .crew-count {
+    font-size: 14pt;
+  }
 }/*# sourceMappingURL=CrewPage.css.map */

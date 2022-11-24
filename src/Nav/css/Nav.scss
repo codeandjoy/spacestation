@@ -35,3 +35,14 @@ nav{
         margin-right: 50px;
     }
 }
+
+@media (max-width: 1200px) {
+    nav{
+        a{
+            font-size: 16pt;
+        }
+        a:not(:last-child){
+            margin-right: 30px;
+        }
+    }
+}

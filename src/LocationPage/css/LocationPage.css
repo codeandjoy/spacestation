@@ -1,6 +1,6 @@
 .location-page {
-  width: 1000px;
-  height: 560px;
+  width: 50vw;
+  height: 55vh;
 }
 .location-page .loading-placeholder,
 .location-page .error-message {
@@ -8,4 +8,10 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+@media (max-width: 1200px) {
+  .location-page {
+    width: 80vw;
+  }
 }/*# sourceMappingURL=LocationPage.css.map */

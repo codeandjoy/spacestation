@@ -12,4 +12,15 @@
 }
 .crew-member .crew-member--name {
   font-size: 14pt;
+}
+
+@media (max-width: 1200px) {
+  .crew-member .crew-member--profile-picture {
+    width: 30px;
+    height: 30px;
+    margin-right: 14px;
+  }
+  .crew-member .crew-member--name {
+    font-size: 12pt;
+  }
 }/*# sourceMappingURL=CrewMember.css.map */

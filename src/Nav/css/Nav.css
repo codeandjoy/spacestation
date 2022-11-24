@@ -29,4 +29,13 @@ nav a.current {
 }
 nav a:not(:last-child) {
   margin-right: 50px;
+}
+
+@media (max-width: 1200px) {
+  nav a {
+    font-size: 16pt;
+  }
+  nav a:not(:last-child) {
+    margin-right: 30px;
+  }
 }/*# sourceMappingURL=Nav.css.map */

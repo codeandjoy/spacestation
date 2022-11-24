@@ -15,3 +15,15 @@
         color: #313131;
     }
 }
+
+@media (max-width: 1200px) {
+    .data-container{
+        .data-container--title{
+            font-size: 80pt;
+            margin-bottom: -20px;
+        }
+        .data-container--data{
+            font-size: 12pt;
+        }
+    }
+}
