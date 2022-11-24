@@ -22,4 +22,10 @@
   .data-container .data-container--data {
     font-size: 12pt;
   }
+}
+@media (max-width: 700px) {
+  .data-container .data-container--title {
+    font-size: 60pt;
+    margin-bottom: -14px;
+  }
 }/*# sourceMappingURL=DataContainer.css.map */

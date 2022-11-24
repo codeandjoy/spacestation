@@ -11,4 +11,9 @@
     height: auto;
     box-sizing: unset;
   }
+}
+@media (max-width: 700px) {
+  .content-container {
+    padding: 100px 50px;
+  }
 }/*# sourceMappingURL=ContentContainer.css.map */
