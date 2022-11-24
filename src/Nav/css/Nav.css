@@ -38,4 +38,9 @@ nav a:not(:last-child) {
   nav a:not(:last-child) {
     margin-right: 30px;
   }
+}
+@media (max-width: 1000px) {
+  nav {
+    align-self: center;
+  }
 }/*# sourceMappingURL=Nav.css.map */

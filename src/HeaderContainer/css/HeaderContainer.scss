@@ -2,3 +2,24 @@
     display: flex;
     justify-content: space-between;
 }
+
+@media (max-width: 1000px) {
+    .header-container{
+        flex-direction: column;
+        justify-content: center;
+
+        margin-bottom: 20px;
+
+        & > *{
+            margin-bottom: 30px;
+        }
+
+        & > *:nth-child(1){
+            order: 1;
+        }
+
+        & > *:nth-child(2){
+            order: 3;
+        }
+    }
+}

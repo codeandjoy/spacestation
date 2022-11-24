@@ -7,3 +7,10 @@
 
     padding: 100px;
 }
+
+@media (max-width: 1000px) {
+    .content-container{
+        height: auto;
+        box-sizing: unset;
+    }
+}

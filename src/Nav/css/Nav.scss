@@ -46,3 +46,9 @@ nav{
         }
     }
 }
+
+@media (max-width: 1000px) {
+    nav{
+        align-self: center;
+    }
+}

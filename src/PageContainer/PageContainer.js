@@ -18,9 +18,7 @@ const PageContainer = ({ children }) => {
         
             className="page-container"
         >
-            <div className='page-centered-content'>
-                { children }
-            </div>
+            { children }
         </motion.div>   
     )
 }

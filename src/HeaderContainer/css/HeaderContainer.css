@@ -1,4 +1,21 @@
 .header-container {
   display: flex;
   justify-content: space-between;
+}
+
+@media (max-width: 1000px) {
+  .header-container {
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .header-container > * {
+    margin-bottom: 30px;
+  }
+  .header-container > *:nth-child(1) {
+    order: 1;
+  }
+  .header-container > *:nth-child(2) {
+    order: 3;
+  }
 }/*# sourceMappingURL=HeaderContainer.css.map */
