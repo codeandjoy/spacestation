@@ -2,6 +2,8 @@
 
 Follow International Space Station live.
 
+https://spacestation-vert.vercel.app/location
+
 # Setup
 
 ```
