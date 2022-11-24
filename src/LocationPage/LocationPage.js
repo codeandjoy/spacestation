@@ -17,7 +17,7 @@ const LocationPage = () => {
 
             {locationDataStatus === 'success' &&
                 <GoogleMapReact
-                    bootstrapURLKeys={{ key: '' }}
+                    bootstrapURLKeys={{ key: 'AIzaSyDPQ7UyVROSr4lLU_lv2Y38qhuEdWuZYxE' }}
                     center={ locationData }
                     zoom= { 1 }
                 >
