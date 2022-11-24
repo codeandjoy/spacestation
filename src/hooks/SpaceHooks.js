@@ -5,8 +5,6 @@ export const useSpace = () => {
     const { status: locationDataStatus, data: locationData } = useQuery('location', () => axios.get('https://api.wheretheiss.at/v1/satellites/25544'), { refetchInterval: 5000 });
     const { status: crewDataStatus, data: crewData } = useQuery('crew', () => axios.get('https://corquaid.github.io/international-space-station-APIs/JSON/people-in-space.json'), { refetchInterval: 5000 });
 
-    console.log(crewData);
-
     // Prepare data
     const cleanLocationData = {
         lat: locationData === undefined ? 0 : parseFloat(locationData?.data.latitude.toFixed(2)),
