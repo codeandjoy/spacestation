@@ -1,3 +1,4 @@
+import ErrorMessage from '../ErrorMessage/ErrorMessage';
 import { useSpace } from '../hooks/SpaceHooks';
 import LoadingPlaceholder from '../LoadingPlaceholder/LoadingPlaceholder';
 import CrewMembers from './CrewMembers';
@@ -17,6 +18,10 @@ const CrewPage = () => {
                     <p className='crew-count'>Currently there are { crewData.length } people on ISS</p>
                     <CrewMembers crewData={ crewData }/>
                 </>
+            }
+
+            {crewDataStatus === 'error' &&
+                <ErrorMessage/>
             }
         </div>
     )

@@ -2,7 +2,8 @@
   width: 1000px;
   height: 560px;
 }
-.location-page .loading-placeholder {
+.location-page .loading-placeholder,
+.location-page .error-message {
   position: absolute;
   top: 50%;
   left: 50%;
